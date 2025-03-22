@@ -1,0 +1,5 @@
+host=localhost
+DB_name=globant_challenge
+usr=postgres
+psw=1234
+schema=challenge
