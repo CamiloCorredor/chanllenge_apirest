@@ -37,7 +37,7 @@ class security:
 
         return parametros
 
-class SQL_LADM:    
+class SQL:    
 
     def __init__(self, host, database, user, psw, schema):
         self.host = host
@@ -86,7 +86,7 @@ class SQL_LADM:
             
 Hermes = security(f'{path_security}/configfile.txt', f'{path_security}/logfile.log')
 parameters = Hermes.config_file_read()
-connector = SQL_LADM(parameters['host'],
+connector = SQL(parameters['host'],
                          parameters['DB_name'],
                          parameters['usr'],
                          parameters['psw'],
