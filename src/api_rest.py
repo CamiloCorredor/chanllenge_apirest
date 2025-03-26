@@ -10,6 +10,7 @@ import traceback
 
 path_security = '/home/camilo/Documentos/Globant_Challenge/sec-logs'  # Mejorar con secret manager
 Hermes = security(f'{path_security}/configfile.txt', f'{path_security}/logfile.log')
+
 app = FastAPI()
 
 class HiredEmployee(BaseModel):
@@ -52,7 +53,7 @@ class Job(BaseModel):
             raise ValueError("Job title cannot be empty.")
         return value
 
-class InsertDataRequest(BaseModel):
+class InsertDataRequest(BaseModel):  ##Bug fixed
     hired_employees: Optional[List[HiredEmployee]] = Field(default_factory=list)  
     departments: Optional[List[Department]] = Field(default_factory=list)  
     jobs: Optional[List[Job]] = Field(default_factory=list)

@@ -624,3 +624,54 @@ DETAIL:  Ya existe la llave (id)=(101).
 2025-03-26 00:08:54 - INFO - Inserted 0 jobs
 2025-03-26 00:08:54 - INFO - Inserted 0 employees
 2025-03-26 00:08:54 - INFO - Database connection closed
+2025-03-26 09:30:17 - INFO - Processing insert_data request
+2025-03-26 09:30:17 - INFO - Connection established
+2025-03-26 09:30:17 - ERROR - IntegrityError PK 101: llave duplicada viola restricción de unicidad «jobs_pkey»
+DETAIL:  Ya existe la llave (id)=(101).
+. Request: ID=101, department=Software Engineer
+2025-03-26 09:30:17 - ERROR - IntegrityError PK 102: llave duplicada viola restricción de unicidad «jobs_pkey»
+DETAIL:  Ya existe la llave (id)=(102).
+. Request: ID=102, department=Data Scientist
+2025-03-26 09:30:17 - INFO - Inserted 0 jobs
+2025-03-26 09:30:17 - INFO - Inserted 0 employees
+2025-03-26 09:30:17 - INFO - Database connection closed
+2025-03-26 15:56:35 - INFO - Processing insert_data request
+2025-03-26 15:56:35 - INFO - Connection established
+2025-03-26 15:56:35 - INFO - Inserted 0 jobs
+2025-03-26 15:56:35 - INFO - Inserted 1 employees
+2025-03-26 15:56:35 - INFO - Database connection closed
+2025-03-26 16:10:17 - INFO - Connection established
+2025-03-26 16:10:56 - INFO - Backup de latabla departments guardado en /home/camilo/Documentos/Globant_Challenge/backups/departments.avro
+2025-03-26 16:11:01 - INFO - Connection established
+2025-03-26 16:11:01 - INFO - Backup de latabla jobs guardado en /home/camilo/Documentos/Globant_Challenge/backups/jobs.avro
+2025-03-26 16:11:04 - INFO - Connection established
+2025-03-26 16:11:04 - ERROR - Error durante backup de la tabla hired_employees: Timestamp('2023-05-10 09:30:00-0500', tz='UTC-05:00') (type <class 'pandas._libs.tslibs.timestamps.Timestamp'>) do not match ['null', 'string', 'int', 'float', 'double'] on field datetime
+2025-03-26 16:16:24 - INFO - Connection established
+2025-03-26 16:16:24 - ERROR - Error durante backup de la tabla departments: timestamp
+2025-03-26 16:16:24 - INFO - Connection established
+2025-03-26 16:16:24 - ERROR - Error durante backup de la tabla jobs: timestamp
+2025-03-26 16:16:24 - INFO - Connection established
+2025-03-26 16:16:24 - ERROR - Error durante backup de la tabla hired_employees: timestamp
+2025-03-26 16:32:04 - INFO - Connection established
+2025-03-26 16:32:11 - INFO - Error al restaurar la tabla 'departments': cannot read header - is it an avro file?
+2025-03-26 16:32:44 - INFO - Connection established
+2025-03-26 16:32:44 - INFO - Backup de latabla departments guardado en /home/camilo/Documentos/Globant_Challenge/backups/departments.avro
+2025-03-26 16:32:47 - INFO - Connection established
+2025-03-26 16:32:47 - INFO - Backup de latabla jobs guardado en /home/camilo/Documentos/Globant_Challenge/backups/jobs.avro
+2025-03-26 16:32:50 - INFO - Connection established
+2025-03-26 16:32:50 - ERROR - Error durante backup de la tabla hired_employees: Timestamp('2023-05-10 09:30:00-0500', tz='UTC-05:00') (type <class 'pandas._libs.tslibs.timestamps.Timestamp'>) do not match ['null', 'string', 'int', 'float', 'double'] on field datetime
+2025-03-26 16:33:10 - INFO - Connection established
+2025-03-26 16:33:26 - INFO - Error al restaurar la tabla 'departments': llave duplicada viola restricción de unicidad «departments_pkey»
+DETAIL:  Ya existe la llave (id)=(2).
+
+2025-03-26 16:35:28 - INFO - Connection established
+2025-03-26 16:35:39 - INFO - Error al restaurar la tabla 'jobs': llave duplicada viola restricción de unicidad «jobs_pkey»
+DETAIL:  Ya existe la llave (id)=(2).
+
+2025-03-26 16:36:06 - INFO - Connection established
+2025-03-26 16:36:06 - INFO - La tabla 'departments' ha sido restaurada exitosamente desde /home/camilo/Documentos/Globant_Challenge/backups/departments.avro.
+2025-03-26 16:36:12 - INFO - Connection established
+2025-03-26 16:36:12 - INFO - La tabla 'jobs' ha sido restaurada exitosamente desde /home/camilo/Documentos/Globant_Challenge/backups/jobs.avro.
+2025-03-26 16:36:16 - INFO - Connection established
+2025-03-26 16:36:16 - INFO - El archivo /home/camilo/Documentos/Globant_Challenge/backups/hired_employees.avro está vacío. No hay datos para restaurar.
+2025-03-26 16:36:16 - INFO - Error al restaurar la tabla 'hired_employees': list index out of range
