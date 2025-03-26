@@ -14,6 +14,7 @@ from migration import SQL, security
 #         user=os.getenv("DB_USER", "myuser"),
 #         password=os.getenv("DB_PASSWORD", "mypassword"),
 #     )
+
 path_security = '/home/camilo/Documentos/Globant_Challenge/sec-logs' #Mejorar con secret manager 
 app = FastAPI()
 
@@ -27,9 +28,11 @@ class HiredEmployee(BaseModel):
 
     @field_validator("datetime", mode="before")
     def validate_datetime(cls, value: str):
+        Hermes = security(f'{path_security}/configfile.txt', f'{path_security}/logfile.log')
         try:
             datetime.fromisoformat(value.replace("Z", "+00:00")) #Validate date
         except ValueError:
+            Hermes.log_file(f'Value error. Detail = Invalid datetime format. Must be ISO 8601','ERROR')
             raise ValueError("Invalid datetime format. Must be ISO 8601.")
         return value
 
@@ -49,6 +52,8 @@ class InsertDataRequest(BaseModel):
     @field_validator("hired_employees", "departments", "jobs", mode="before")
     def validate_batch_size(cls, value):
         if not (1 <= len(value) <= 1000):
+            Hermes = security(f'{path_security}/configfile.txt', f'{path_security}/logfile.log')
+            Hermes.log_file(f'Each batch must contain between 1 and 1000 records.','ERROR')
             raise ValueError("Each batch must contain between 1 and 1000 records.")
         return value
 
@@ -105,6 +110,7 @@ def insert_data(request: InsertDataRequest):
         return {"message": "Data inserted successfully"}
     except Exception as e:
         conn.rollback()
+        Hermes.log_file(f'Status code 500. Detail = Dstr{e}','ERROR')
         raise HTTPException(status_code=500, detail=str(e))
     finally:
         cursor.close()

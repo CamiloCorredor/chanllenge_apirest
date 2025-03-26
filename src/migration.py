@@ -57,6 +57,7 @@ class SQL:
             password=self.psw
             )
             Hermes.log_file('Connection established', 'INFO')
+            #print(self.database, self.host)
             return connection
         except Exception as e:
             Hermes.log_file('Failed connection to database', 'ERROR')
@@ -64,22 +65,35 @@ class SQL:
     def load_csv_to_db(self, file_path: str, table_name: str):
         Hermes = security(f'{path_security}/configfile.txt', f'{path_security}/logfile.log')
         conn = self.connect()
-    
+        cursor = conn.cursor()
         try:
-            df = pd.read_csv(file_path)
+            df = pd.read_csv(file_path, sep=',')
+            # print(df)
+            # cursor.execute(f"SELECT to_regclass('challenge.{table_name}')")
+            # table_exists = cursor.fetchone()[0]
+            print(df.isnull().sum()) 
+            df = df.applymap(lambda x: None if pd.isna(x) else x)
+            if table_name == 'department' or table_name == 'jobs': 
+                df.iloc[:, 0] = df.iloc[:, 0].fillna(0).astype(int)
+            elif table_name == 'hired_employees':
+                df.iloc[:, -2:] = df.iloc[:, -2:].fillna(0).astype(int) ###Bug fixed
+            
             for _, row in df.iterrows():
-                conn.execute(
-                    f"INSERT INTO {table_name} VALUES ({', '.join(['%s'] * len(row))})",
+                cursor.execute(
+                    f"INSERT INTO challenge.{table_name} VALUES ({', '.join(['%s'] * len(df.columns))})",
                 tuple(row)
                 )
             conn.commit()
+            Hermes.log_file(f"Data inserted on {table_name}", 'INFO')
         except Exception as e:
+            Hermes.log_file(
+                f"Error loading CSV to {table_name}: {e}.", 'ERROR')
+
             conn.rollback()
-            Hermes.log_file(f"Error loading CSV to {table_name}: {str(e)}", 'ERROR')
             raise HTTPException(status_code=400, detail=str(e))
         finally:
-            conn.close()            
-            Hermes.log_file(f"Data from {file_path} loaded into {table_name}", 'INFO')
+            cursor.close()            
+            Hermes.log_file(f"Connection closed", 'INFO')
             
 
             
@@ -94,5 +108,8 @@ connector = SQL(parameters['host'],
 
 
 connector.connect()
+connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/departments.csv', 'departments')
+connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/hired_employees.csv', 'hired_employees')
+connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/jobs.csv', 'jobs')
             
             

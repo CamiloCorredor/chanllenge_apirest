@@ -5,3 +5,240 @@
 2025-03-22 10:54:38 - INFO - Connection established
 2025-03-22 10:54:49 - INFO - Connection established
 2025-03-22 11:04:52 - INFO - Connection established
+2025-03-24 08:41:51 - INFO - Connection established
+2025-03-24 08:42:06 - INFO - Connection established
+2025-03-24 08:42:06 - ERROR - Status code 500. Detail = Dstrno existe la relación «departments»
+LINE 1: INSERT INTO departments (id, department) VALUES (1, 'HR') ON...
+                    ^
+
+2025-03-24 08:48:35 - INFO - Connection established
+2025-03-24 08:53:23 - INFO - Connection established
+2025-03-24 08:55:45 - INFO - Connection established
+2025-03-24 08:55:45 - INFO - Connection established
+2025-03-24 08:55:45 - ERROR - Error loading CSV to deparments: [Errno 2] No such file or directory: '/home/camilo/Documentos/Globant_Challenge/data/deparmets.csv'
+2025-03-24 08:55:45 - INFO - Data from /home/camilo/Documentos/Globant_Challenge/data/deparmets.csv loaded into deparments
+2025-03-24 08:55:56 - INFO - Connection established
+2025-03-24 08:55:58 - INFO - Connection established
+2025-03-24 08:55:58 - ERROR - Error loading CSV to deparments: [Errno 2] No such file or directory: '/home/camilo/Documentos/Globant_Challenge/data/deparmets.csv'
+2025-03-24 08:55:58 - INFO - Data from /home/camilo/Documentos/Globant_Challenge/data/deparmets.csv loaded into deparments
+2025-03-24 08:56:27 - INFO - Connection established
+2025-03-24 08:56:27 - INFO - Connection established
+2025-03-24 08:56:27 - ERROR - Error loading CSV to deparments: [Errno 2] No such file or directory: '/home/camilo/Documentos/Globant_Challenge/data/deparments.csv'
+2025-03-24 08:56:27 - INFO - Data from /home/camilo/Documentos/Globant_Challenge/data/deparments.csv loaded into deparments
+2025-03-24 08:56:34 - INFO - Connection established
+2025-03-24 08:56:35 - INFO - Connection established
+2025-03-24 08:56:35 - ERROR - Error loading CSV to deparments: [Errno 2] No such file or directory: '/home/camilo/Documentos/Globant_Challenge/data/deparments.csv'
+2025-03-24 08:56:35 - INFO - Data from /home/camilo/Documentos/Globant_Challenge/data/deparments.csv loaded into deparments
+2025-03-24 09:01:04 - INFO - Connection established
+2025-03-24 09:01:04 - INFO - Connection established
+2025-03-24 09:01:04 - ERROR - Error loading CSV to deparments: 'psycopg2.extensions.connection' object has no attribute 'execute'
+2025-03-24 09:01:04 - INFO - Data from /home/camilo/Documentos/Globant_Challenge/data/departments.csv loaded into deparments
+2025-03-24 09:01:14 - INFO - Connection established
+2025-03-24 09:01:14 - INFO - Connection established
+2025-03-24 09:01:14 - ERROR - Error loading CSV to departments: 'psycopg2.extensions.connection' object has no attribute 'execute'
+2025-03-24 09:01:14 - INFO - Data from /home/camilo/Documentos/Globant_Challenge/data/departments.csv loaded into departments
+2025-03-24 09:01:18 - INFO - Connection established
+2025-03-24 09:01:23 - INFO - Connection established
+2025-03-24 09:03:34 - INFO - Connection established
+2025-03-24 09:03:34 - INFO - Connection established
+2025-03-24 09:03:34 - INFO - Data from /home/camilo/Documentos/Globant_Challenge/data/departments.csv loaded into departments
+2025-03-24 09:03:37 - INFO - Connection established
+2025-03-24 09:03:44 - INFO - Connection established
+2025-03-24 09:03:55 - INFO - Data from /home/camilo/Documentos/Globant_Challenge/data/departments.csv loaded into departments
+2025-03-24 09:27:20 - INFO - Connection established
+2025-03-24 09:27:23 - INFO - Connection established
+2025-03-24 09:28:39 - INFO - Connection established
+2025-03-24 09:28:39 - INFO - Connection established
+2025-03-24 09:28:39 - ERROR - Error loading CSV to departments: no existe la relación «departments»
+LINE 1: INSERT INTO departments VALUES (2, 'Sales')
+                    ^
+
+2025-03-24 09:28:39 - INFO - Connection closed
+2025-03-24 09:28:42 - INFO - Connection established
+2025-03-24 09:28:45 - INFO - Connection established
+2025-03-24 09:28:55 - ERROR - Error loading CSV to departments: no existe la relación «departments»
+LINE 1: INSERT INTO departments VALUES (2, 'Sales')
+                    ^
+
+2025-03-24 09:30:50 - INFO - Connection established
+2025-03-24 09:30:50 - INFO - Connection established
+2025-03-24 09:30:50 - ERROR - Error loading CSV to departments: no existe la relación «departments»
+LINE 1: INSERT INTO departments VALUES (2, 'Sales')
+                    ^
+
+2025-03-24 09:30:50 - INFO - Connection closed
+2025-03-24 09:30:53 - INFO - Connection established
+2025-03-24 09:30:55 - INFO - Connection established
+2025-03-24 09:32:12 - INFO - Connection established
+2025-03-24 09:32:12 - INFO - Connection established
+2025-03-24 09:32:12 - ERROR - Error loading CSV to departments: no existe la relación «departments»
+LINE 1: INSERT INTO departments VALUES (2, 'Sales')
+                    ^
+
+2025-03-24 09:32:12 - INFO - Connection closed
+2025-03-24 09:32:15 - INFO - Connection established
+2025-03-24 09:32:23 - INFO - Connection established
+2025-03-24 09:32:48 - ERROR - Error loading CSV to departments: no existe la relación «departments»
+LINE 1: INSERT INTO departments VALUES (2, 'Sales')
+                    ^
+
+2025-03-24 09:39:25 - INFO - Connection established
+2025-03-24 09:39:25 - INFO - Connection established
+2025-03-24 09:39:25 - ERROR - Error loading CSV to departments: no existe la relación «public.departments»
+LINE 1: INSERT INTO public.departments VALUES (2, 'Sales')
+                    ^
+
+2025-03-24 09:39:25 - INFO - Connection closed
+2025-03-24 09:39:29 - INFO - Connection established
+2025-03-24 09:39:31 - INFO - Connection established
+2025-03-24 09:39:37 - ERROR - Error loading CSV to departments: no existe la relación «public.departments»
+LINE 1: INSERT INTO public.departments VALUES (2, 'Sales')
+                    ^
+
+2025-03-24 09:41:44 - INFO - Connection established
+2025-03-24 09:41:44 - INFO - Connection established
+2025-03-24 09:41:44 - ERROR - Error loading CSV to departments: no existe la relación «public.departments»
+LINE 1: INSERT INTO public.departments VALUES (2, 'Sales')
+                    ^
+
+2025-03-24 09:41:44 - INFO - Connection closed
+2025-03-24 09:41:48 - INFO - Connection established
+2025-03-24 09:41:50 - INFO - Connection established
+2025-03-24 09:42:03 - ERROR - Error loading CSV to departments: no existe la relación «public.departments»
+LINE 1: INSERT INTO public.departments VALUES (2, 'Sales')
+                    ^
+
+2025-03-24 09:42:03 - INFO - Connection closed
+2025-03-24 09:43:37 - INFO - Connection established
+2025-03-24 09:43:37 - INFO - Connection established
+2025-03-24 09:43:37 - ERROR - Error loading CSV to departments: no existe la relación «public.departments»
+LINE 1: INSERT INTO public.departments VALUES (2, 'Sales')
+                    ^
+
+2025-03-24 09:43:37 - INFO - Connection closed
+2025-03-24 09:43:41 - INFO - Connection established
+2025-03-24 09:43:46 - INFO - Connection established
+2025-03-24 09:45:03 - INFO - Connection established
+2025-03-24 09:46:12 - INFO - Connection established
+2025-03-24 09:46:12 - INFO - Connection established
+2025-03-24 09:46:12 - ERROR - Error loading CSV to departments: no existe la relación «public.departments»
+LINE 1: INSERT INTO public.departments VALUES (2, 'Sales')
+                    ^
+
+2025-03-24 09:46:12 - INFO - Connection closed
+2025-03-24 09:46:16 - INFO - Connection established
+2025-03-24 09:48:27 - INFO - Connection established
+2025-03-24 09:48:27 - INFO - Connection established
+2025-03-24 09:48:27 - ERROR - Error loading CSV to departments: no existe la relación «challenge.departments»
+LINE 1: INSERT INTO challenge.departments VALUES (2, 'Sales')
+                    ^
+
+2025-03-24 09:48:27 - INFO - Connection closed
+2025-03-24 09:48:36 - INFO - Connection established
+2025-03-24 09:48:39 - INFO - Connection established
+2025-03-24 09:48:55 - ERROR - Error loading CSV to departments: no existe la relación «challenge.departments»
+LINE 1: INSERT INTO challenge.departments VALUES (2, 'Sales')
+                    ^
+
+2025-03-24 09:50:16 - INFO - Connection established
+2025-03-24 09:50:20 - INFO - Connection established
+2025-03-24 09:51:08 - INFO - Connection closed
+2025-03-24 09:51:11 - INFO - Connection established
+2025-03-24 09:51:11 - ERROR - Error loading CSV to hired_employess: [Errno 2] No such file or directory: '/home/camilo/Documentos/Globant_Challenge/data/hired_employess.csv'
+2025-03-24 09:51:11 - INFO - Connection closed
+2025-03-24 09:54:20 - INFO - Connection established
+2025-03-24 09:54:20 - INFO - Connection established
+2025-03-24 09:54:20 - INFO - Data inserted on departments
+2025-03-24 09:54:20 - INFO - Connection closed
+2025-03-24 09:54:20 - INFO - Connection established
+2025-03-24 09:54:20 - ERROR - Error loading CSV to hired_employees: el entero está fuera de rango
+
+2025-03-24 09:54:20 - INFO - Connection closed
+2025-03-24 10:00:07 - INFO - Connection established
+2025-03-24 10:00:07 - INFO - Data inserted on departments
+2025-03-24 10:00:07 - INFO - Connection closed
+2025-03-24 10:00:14 - INFO - Connection established
+2025-03-24 10:00:14 - ERROR - Error loading CSV to hired_employees: el entero está fuera de rango
+
+2025-03-24 10:00:14 - INFO - Connection closed
+2025-03-24 10:02:56 - INFO - Connection established
+2025-03-24 10:02:56 - INFO - Connection established
+2025-03-24 10:02:56 - INFO - Data inserted on departments
+2025-03-24 10:02:56 - INFO - Connection closed
+2025-03-24 10:02:56 - INFO - Connection established
+2025-03-24 10:02:56 - ERROR - Error loading CSV to hired_employees: el entero está fuera de rango
+
+2025-03-24 10:02:56 - INFO - Connection closed
+2025-03-24 10:03:00 - INFO - Connection established
+2025-03-24 10:03:00 - INFO - Connection established
+2025-03-24 10:03:08 - INFO - Data inserted on departments
+2025-03-24 10:03:08 - INFO - Connection closed
+2025-03-24 10:03:11 - INFO - Connection established
+2025-03-24 10:04:50 - ERROR - Error loading CSV to hired_employees: el entero está fuera de rango
+
+2025-03-24 10:04:50 - INFO - Connection closed
+2025-03-24 10:06:55 - INFO - Connection established
+2025-03-24 10:06:55 - INFO - Connection established
+2025-03-24 10:06:55 - INFO - Data inserted on departments
+2025-03-24 10:06:55 - INFO - Connection closed
+2025-03-24 10:06:55 - INFO - Connection established
+2025-03-24 10:06:55 - INFO - Data inserted on jobs
+2025-03-24 10:06:55 - INFO - Connection closed
+2025-03-24 10:06:58 - INFO - Connection established
+2025-03-24 10:06:58 - INFO - Connection established
+2025-03-24 10:07:06 - INFO - Data inserted on departments
+2025-03-24 10:07:06 - INFO - Connection closed
+2025-03-24 10:07:13 - INFO - Connection established
+2025-03-24 10:08:20 - INFO - Connection established
+2025-03-24 10:08:20 - INFO - Connection established
+2025-03-24 10:08:20 - ERROR - Error loading CSV to hired_employees: el entero está fuera de rango
+
+2025-03-24 10:12:21 - INFO - Connection closed
+2025-03-25 16:50:51 - INFO - Connection established
+2025-03-25 16:50:51 - INFO - Connection established
+2025-03-25 16:50:51 - INFO - Data inserted on departments
+2025-03-25 16:50:51 - INFO - Connection closed
+2025-03-25 16:50:54 - INFO - Connection established
+2025-03-25 16:50:54 - ERROR - Error loading CSV to hired_employees: la sintaxis de entrada no es válida para integer: «None»
+LINE 1: ...LUES (67, 'Thia Morican', '2021-03-10T19:27:10Z', 'None', 10...
+                                                             ^
+
+2025-03-25 16:50:54 - INFO - Connection closed
+2025-03-25 16:52:48 - INFO - Connection established
+2025-03-25 16:52:48 - INFO - Connection established
+2025-03-25 16:52:48 - INFO - Data inserted on departments
+2025-03-25 16:52:48 - INFO - Connection closed
+2025-03-25 16:52:52 - INFO - Connection established
+2025-03-25 16:52:53 - ERROR - Error loading CSV to hired_employees: el entero está fuera de rango
+
+2025-03-25 16:52:53 - INFO - Connection closed
+2025-03-25 21:18:50 - INFO - Connection established
+2025-03-25 21:18:50 - INFO - Connection established
+2025-03-25 21:18:50 - INFO - Data inserted on departments
+2025-03-25 21:18:50 - INFO - Connection closed
+2025-03-25 21:18:53 - INFO - Connection established
+2025-03-25 21:19:19 - ERROR - Error loading CSV to hired_employees: el entero está fuera de rango
+. This is line-error: INSERT INTO challenge.hired_employees VALUES (%s, %s, %s, %s, %s)
+2025-03-25 21:21:23 - INFO - Connection established
+2025-03-25 21:21:23 - INFO - Connection established
+2025-03-25 21:21:24 - INFO - Data inserted on departments
+2025-03-25 21:21:24 - INFO - Connection closed
+2025-03-25 21:21:25 - INFO - Connection established
+2025-03-25 21:23:07 - INFO - Connection established
+2025-03-25 21:23:07 - INFO - Connection established
+2025-03-25 21:27:14 - INFO - Connection established
+2025-03-25 21:27:16 - INFO - Connection established
+2025-03-25 21:27:16 - INFO - Data inserted on departments
+2025-03-25 21:27:16 - INFO - Connection closed
+2025-03-25 21:27:24 - INFO - Connection established
+2025-03-25 21:27:37 - INFO - Connection closed
+2025-03-25 21:30:48 - INFO - Connection established
+2025-03-25 21:30:48 - INFO - Connection established
+2025-03-25 21:30:49 - INFO - Data inserted on departments
+2025-03-25 21:30:49 - INFO - Connection closed
+2025-03-25 21:30:50 - INFO - Connection established
+2025-03-25 21:30:52 - INFO - Data inserted on hired_employees
+2025-03-25 21:30:52 - INFO - Connection closed
+2025-03-25 21:30:53 - INFO - Connection established
+2025-03-25 21:30:53 - INFO - Data inserted on jobs
+2025-03-25 21:30:53 - INFO - Connection closed
