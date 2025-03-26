@@ -543,10 +543,84 @@ DETAIL:  Ya existe la llave (id)=(2).
 LINE 1: SELECT nextval('challenge.hired_employees_id_seq');
                        ^
 
-2025-03-25 22:58:17 - INFO - Database connection closed
-2025-03-25 22:59:51 - INFO - Processing insert_data request
-2025-03-25 22:59:51 - INFO - Connection established
-2025-03-25 22:59:51 - INFO - Inserted 0 departments
-2025-03-25 22:59:51 - INFO - Inserted 0 jobs
-2025-03-25 22:59:51 - INFO - Inserted 1 employees
-2025-03-25 22:59:51 - INFO - Database connection closed
+
+2025-03-25 23:26:39 - INFO - Processing insert_data request
+2025-03-25 23:26:39 - INFO - Connection established
+2025-03-25 23:26:39 - ERROR - IntegrityError inserting department 3: llave duplicada viola restricción de unicidad «departments_pkey»
+DETAIL:  Ya existe la llave (id)=(3).
+
+2025-03-25 23:26:39 - INFO - Inserted 0 departments
+2025-03-25 23:26:39 - INFO - Inserted 0 jobs
+2025-03-25 23:26:39 - INFO - Inserted 0 employees
+2025-03-25 23:26:39 - INFO - Database connection closed
+2025-03-25 23:28:16 - INFO - Processing insert_data request
+2025-03-25 23:28:16 - INFO - Connection established
+2025-03-25 23:28:16 - ERROR - IntegrityError inserting department 3: llave duplicada viola restricción de unicidad «departments_pkey»
+DETAIL:  Ya existe la llave (id)=(3).
+. Request: 3, Test1
+2025-03-25 23:28:16 - INFO - Inserted 0 departments
+2025-03-25 23:28:16 - INFO - Inserted 0 jobs
+2025-03-25 23:28:16 - INFO - Inserted 0 employees
+2025-03-25 23:28:16 - INFO - Database connection closed
+2025-03-25 23:30:32 - INFO - Processing insert_data request
+2025-03-25 23:30:32 - INFO - Connection established
+2025-03-25 23:30:32 - ERROR - IntegrityError PK 3: llave duplicada viola restricción de unicidad «departments_pkey»
+DETAIL:  Ya existe la llave (id)=(3).
+. Request: ID=3, department=Test1
+2025-03-25 23:30:32 - INFO - Inserted 0 departments
+2025-03-25 23:30:32 - INFO - Inserted 0 jobs
+2025-03-25 23:30:32 - INFO - Inserted 0 employees
+2025-03-25 23:30:32 - INFO - Database connection closed
+2025-03-25 23:32:10 - INFO - Processing insert_data request
+2025-03-25 23:32:10 - INFO - Connection established
+2025-03-25 23:32:10 - INFO - Inserted 1 departments
+2025-03-25 23:32:10 - INFO - Inserted 0 jobs
+2025-03-25 23:32:10 - INFO - Inserted 0 employees
+2025-03-25 23:32:10 - INFO - Database connection closed
+2025-03-25 23:33:47 - INFO - Processing insert_data request
+2025-03-25 23:33:47 - INFO - Connection established
+2025-03-25 23:33:47 - INFO - Inserted 1 departments
+2025-03-25 23:33:47 - INFO - Inserted 0 jobs
+2025-03-25 23:33:47 - INFO - Inserted 0 employees
+2025-03-25 23:33:47 - INFO - Database connection closed
+2025-03-25 23:53:07 - ERROR - Validation error: Department name cannot be empty
+2025-03-25 23:56:30 - ERROR - Validation error: Job title cannot be empty
+2025-03-25 23:56:30 - ERROR - Validation error: Job title cannot be empty
+2025-03-26 00:04:45 - INFO - Processing insert_data request
+2025-03-26 00:04:45 - INFO - Connection established
+2025-03-26 00:04:45 - INFO - Inserted 1 departments
+2025-03-26 00:04:45 - INFO - Inserted 0 jobs
+2025-03-26 00:04:45 - INFO - Inserted 0 employees
+2025-03-26 00:04:45 - INFO - Database connection closed
+2025-03-26 00:04:59 - ERROR - Validation error: Job title cannot be empty
+2025-03-26 00:06:08 - INFO - Processing insert_data request
+2025-03-26 00:06:08 - INFO - Connection established
+2025-03-26 00:06:08 - ERROR - DatabaseError inserting job job Software Engineer: no existe la columna «job» en la relación «jobs»
+LINE 1: INSERT INTO challenge.jobs (id, job) VALUES (101, 'Software ...
+                                        ^
+
+2025-03-26 00:06:08 - INFO - Inserted 0 jobs
+2025-03-26 00:06:08 - INFO - Inserted 0 employees
+2025-03-26 00:06:08 - INFO - Database connection closed
+2025-03-26 00:06:24 - INFO - Processing insert_data request
+2025-03-26 00:06:24 - INFO - Connection established
+2025-03-26 00:06:24 - INFO - Inserted 0 jobs
+2025-03-26 00:06:24 - INFO - Inserted 1 employees
+2025-03-26 00:06:24 - INFO - Database connection closed
+2025-03-26 00:07:44 - INFO - Processing insert_data request
+2025-03-26 00:07:44 - INFO - Connection established
+2025-03-26 00:07:44 - ERROR - DatabaseError inserting job job Software Engineer: no existe la columna «job» en la relación «jobs»
+LINE 1: INSERT INTO challenge.jobs (id, job) VALUES (101, 'Software ...
+                                        ^
+
+2025-03-26 00:07:44 - INFO - Inserted 0 jobs
+2025-03-26 00:07:44 - INFO - Inserted 0 employees
+2025-03-26 00:07:44 - INFO - Database connection closed
+2025-03-26 00:08:54 - INFO - Processing insert_data request
+2025-03-26 00:08:54 - INFO - Connection established
+2025-03-26 00:08:54 - ERROR - IntegrityError PK 101: llave duplicada viola restricción de unicidad «jobs_pkey»
+DETAIL:  Ya existe la llave (id)=(101).
+. Request: ID=101, department=Software Engineer
+2025-03-26 00:08:54 - INFO - Inserted 0 jobs
+2025-03-26 00:08:54 - INFO - Inserted 0 employees
+2025-03-26 00:08:54 - INFO - Database connection closed

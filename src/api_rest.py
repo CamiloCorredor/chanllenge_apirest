@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
-from typing import Optional
-from pydantic import BaseModel, field_validator, Field
+from typing import Optional, List
+from pydantic import BaseModel, field_validator, Field, model_validator
 import psycopg2
 import os
 from typing import List
@@ -9,18 +9,19 @@ from migration import SQL, security
 import traceback
 
 path_security = '/home/camilo/Documentos/Globant_Challenge/sec-logs'  # Mejorar con secret manager
+Hermes = security(f'{path_security}/configfile.txt', f'{path_security}/logfile.log')
 app = FastAPI()
 
 class HiredEmployee(BaseModel):
     id: Optional[int] = None
-    name: str
-    datetime: str
-    department_id: int
-    job_id: int
+    name: str = Field(..., min_length=1)
+    datetime: str = Field(...)
+    department_id: int = Field(..., gt=0)
+    job_id: int = Field(..., gt=0)
 
     @field_validator("datetime", mode="before")
-    def validate_datetime(cls, value: str):
-        Hermes = security(f'{path_security}/configfile.txt', f'{path_security}/logfile.log')
+    def validate_datetime(cls, value):
+        
         try:
             datetime.fromisoformat(value.replace("Z", "+00:00"))  # Validar fecha
         except ValueError:
@@ -29,17 +30,32 @@ class HiredEmployee(BaseModel):
         return value
 
 class Department(BaseModel):
-    id: int
-    department: str
+    id: int = Field(..., gt=0)  
+    department: str = Field(..., min_length=1)  
+    
+    @field_validator("department", mode="before")
+    def validate_department(cls, value: str):
+        
+        if not isinstance(value, str) or not value.strip():
+            Hermes.log_file(f'Validation error: Department name cannot be empty', 'ERROR')
+            raise ValueError("Department name cannot be empty.")
+        return value
 
 class Job(BaseModel):
-    id: int
-    job: str
+    id: int = Field(..., gt=0)
+    job: str = Field(..., min_length=1)
+
+    @field_validator("job", mode="before")
+    def validate_job(cls, value):
+        if not isinstance(value, str) or not value.strip():
+            Hermes.log_file(f'Validation error: Job title cannot be empty', 'ERROR')
+            raise ValueError("Job title cannot be empty.")
+        return value
 
 class InsertDataRequest(BaseModel):
-    hired_employees: List[HiredEmployee] = Field(default_factory=list)
-    departments: List[Department] = Field(default_factory=list)
-    jobs: List[Job] = Field(default_factory=list)
+    hired_employees: Optional[List[HiredEmployee]] = Field(default_factory=list)  
+    departments: Optional[List[Department]] = Field(default_factory=list)  
+    jobs: Optional[List[Job]] = Field(default_factory=list)
 
 @app.post("/insert_data")
 async def insert_data(request: InsertDataRequest):
@@ -62,20 +78,43 @@ async def insert_data(request: InsertDataRequest):
         cursor = conn.cursor()
 
         # Insertar departamentos
+        
+        department_inserted = 0
         for department in request.departments:
-            cursor.execute(
-                "INSERT INTO challenge.departments (id, department) VALUES (%s, %s) ON CONFLICT (id) DO NOTHING",
-                (department.id, department.department)
-            )
-        Hermes.log_file(f'Inserted {len(request.departments)} departments', 'INFO')
+            try:
+                cursor.execute(
+                       "INSERT INTO challenge.departments (id, department) VALUES (%s, %s)",
+                        (department.id, department.department)
+                        )
+                department_inserted += 1
+            except psycopg2.IntegrityError as e:
+                conn.rollback()
+                Hermes.log_file(f"IntegrityError PK {department.id}: {e}. Request: ID={department.id}, department={department.department}", "ERROR")
+            except psycopg2.DatabaseError as e:
+                conn.rollback()
+                Hermes.log_file(f"DatabaseError inserting department {department.department}: {e}", "ERROR")
 
+            Hermes.log_file(f'Inserted {department_inserted} departments', 'INFO')
+
+        
+    
         # Insertar trabajos
+        jobs_inserted = 0
         for job in request.jobs:
-            cursor.execute(
-                "INSERT INTO challenge.jobs (id, job) VALUES (%s, %s) ON CONFLICT (id) DO NOTHING",
+            try:
+                cursor.execute(
+                "INSERT INTO challenge.jobs (id, jobs) VALUES (%s, %s)",
                 (job.id, job.job)
-            )
-        Hermes.log_file(f'Inserted {len(request.jobs)} jobs', 'INFO')
+                )
+                jobs_inserted += 1
+            except psycopg2.IntegrityError as e:
+                conn.rollback()
+                Hermes.log_file(f"IntegrityError PK {job.id}: {e}. Request: ID={job.id}, department={job.job}", "ERROR")
+            except psycopg2.DatabaseError as e:
+                conn.rollback()
+                Hermes.log_file(f"DatabaseError inserting job job {job.job}: {e}", "ERROR")
+
+        Hermes.log_file(f'Inserted {jobs_inserted} jobs', 'INFO')
 
         # Obtener IDs válidos de departamentos y trabajos
         cursor.execute("SELECT id FROM challenge.departments")
@@ -90,10 +129,12 @@ async def insert_data(request: InsertDataRequest):
             if employee.department_id not in valid_departments:
                 msg = f"Department ID {employee.department_id} does not exist."
                 Hermes.log_file(f"Status code 400. Detail = {msg}", 'ERROR')
+                Hermes.log_file(f"Data not inserted {request.hired_employees}")
                 raise HTTPException(status_code=400, detail=msg)
 
             if employee.job_id not in valid_jobs:
                 msg = f"Job ID {employee.job_id} does not exist."
+                Hermes.log_file(f"Data not inserted {request.hired_employees}")
                 Hermes.log_file(f"Status code 400. Detail = {msg}", 'ERROR')
                 raise HTTPException(status_code=400, detail=msg)
             
