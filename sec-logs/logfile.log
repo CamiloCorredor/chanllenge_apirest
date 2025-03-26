@@ -242,3 +242,311 @@ LINE 1: ...LUES (67, 'Thia Morican', '2021-03-10T19:27:10Z', 'None', 10...
 2025-03-25 21:30:53 - INFO - Connection established
 2025-03-25 21:30:53 - INFO - Data inserted on jobs
 2025-03-25 21:30:53 - INFO - Connection closed
+2025-03-25 21:53:12 - INFO - Connection established
+2025-03-25 21:53:13 - INFO - Connection established
+2025-03-25 21:53:13 - INFO - Data inserted on departments
+2025-03-25 21:53:13 - INFO - Connection closed
+2025-03-25 21:53:14 - INFO - Connection established
+2025-03-25 21:53:15 - INFO - Data inserted on hired_employees
+2025-03-25 21:53:15 - INFO - Connection closed
+2025-03-25 21:53:16 - INFO - Connection established
+2025-03-25 21:53:16 - INFO - Data inserted on jobs
+2025-03-25 21:53:16 - INFO - Connection closed
+2025-03-25 21:57:28 - INFO - Connection established
+2025-03-25 21:57:28 - INFO - Connection established
+2025-03-25 21:57:28 - INFO - Data inserted on departments
+2025-03-25 21:57:28 - INFO - Connection closed
+2025-03-25 21:57:28 - INFO - Connection established
+2025-03-25 21:57:29 - INFO - Data inserted on hired_employees
+2025-03-25 21:57:29 - INFO - Connection closed
+2025-03-25 21:57:29 - INFO - Connection established
+2025-03-25 21:57:29 - INFO - Data inserted on jobs
+2025-03-25 21:57:29 - INFO - Connection closed
+2025-03-25 21:58:36 - INFO - Connection established
+2025-03-25 21:58:36 - INFO - Connection established
+2025-03-25 21:58:36 - INFO - Data inserted on departments
+2025-03-25 21:58:36 - INFO - Connection closed
+2025-03-25 21:58:36 - INFO - Connection established
+2025-03-25 21:58:36 - INFO - Data inserted on hired_employees
+2025-03-25 21:58:36 - INFO - Connection closed
+2025-03-25 21:58:37 - INFO - Connection established
+2025-03-25 21:58:37 - INFO - Data inserted on jobs
+2025-03-25 21:58:37 - INFO - Connection closed
+2025-03-25 21:58:51 - INFO - Connection established
+2025-03-25 21:58:51 - INFO - Connection established
+2025-03-25 21:58:51 - INFO - Data inserted on departments
+2025-03-25 21:58:51 - INFO - Connection closed
+2025-03-25 21:58:51 - INFO - Connection established
+2025-03-25 21:58:52 - INFO - Data inserted on hired_employees
+2025-03-25 21:58:52 - INFO - Connection closed
+2025-03-25 21:58:52 - INFO - Connection established
+2025-03-25 21:58:52 - INFO - Data inserted on jobs
+2025-03-25 21:58:52 - INFO - Connection closed
+2025-03-25 22:00:33 - INFO - Connection established
+2025-03-25 22:00:33 - INFO - Connection established
+2025-03-25 22:00:33 - INFO - Data inserted on departments
+2025-03-25 22:00:33 - INFO - Connection closed
+2025-03-25 22:00:33 - INFO - Connection established
+2025-03-25 22:00:34 - INFO - Data inserted on hired_employees
+2025-03-25 22:00:34 - INFO - Connection closed
+2025-03-25 22:00:34 - INFO - Connection established
+2025-03-25 22:00:34 - INFO - Data inserted on jobs
+2025-03-25 22:00:34 - INFO - Connection closed
+2025-03-25 22:04:17 - INFO - Connection established
+2025-03-25 22:04:17 - INFO - Connection established
+2025-03-25 22:04:17 - INFO - Data inserted on departments
+2025-03-25 22:04:17 - INFO - Connection closed
+2025-03-25 22:04:17 - INFO - Connection established
+2025-03-25 22:04:18 - INFO - Data inserted on hired_employees
+2025-03-25 22:04:18 - INFO - Connection closed
+2025-03-25 22:04:18 - INFO - Connection established
+2025-03-25 22:04:18 - INFO - Data inserted on jobs
+2025-03-25 22:04:18 - INFO - Connection closed
+2025-03-25 22:04:32 - INFO - Connection established
+2025-03-25 22:04:32 - INFO - Connection established
+2025-03-25 22:04:32 - INFO - Data inserted on departments
+2025-03-25 22:04:32 - INFO - Connection closed
+2025-03-25 22:04:32 - INFO - Connection established
+2025-03-25 22:04:33 - INFO - Data inserted on hired_employees
+2025-03-25 22:04:33 - INFO - Connection closed
+2025-03-25 22:04:33 - INFO - Connection established
+2025-03-25 22:04:33 - INFO - Data inserted on jobs
+2025-03-25 22:04:33 - INFO - Connection closed
+2025-03-25 22:05:59 - INFO - Connection established
+2025-03-25 22:05:59 - INFO - Connection established
+2025-03-25 22:05:59 - INFO - Data inserted on departments
+2025-03-25 22:05:59 - INFO - Connection closed
+2025-03-25 22:05:59 - INFO - Connection established
+2025-03-25 22:06:00 - INFO - Data inserted on hired_employees
+2025-03-25 22:06:00 - INFO - Connection closed
+2025-03-25 22:06:00 - INFO - Connection established
+2025-03-25 22:06:00 - INFO - Data inserted on jobs
+2025-03-25 22:06:00 - INFO - Connection closed
+2025-03-25 22:06:28 - INFO - Connection established
+2025-03-25 22:06:28 - INFO - Connection established
+2025-03-25 22:06:28 - INFO - Data inserted on departments
+2025-03-25 22:06:28 - INFO - Connection closed
+2025-03-25 22:06:28 - INFO - Connection established
+2025-03-25 22:06:29 - INFO - Data inserted on hired_employees
+2025-03-25 22:06:29 - INFO - Connection closed
+2025-03-25 22:06:29 - INFO - Connection established
+2025-03-25 22:06:29 - INFO - Data inserted on jobs
+2025-03-25 22:06:29 - INFO - Connection closed
+2025-03-25 22:06:51 - INFO - Connection established
+2025-03-25 22:06:51 - INFO - Connection established
+2025-03-25 22:06:51 - INFO - Data inserted on departments
+2025-03-25 22:06:51 - INFO - Connection closed
+2025-03-25 22:06:51 - INFO - Connection established
+2025-03-25 22:06:52 - INFO - Data inserted on hired_employees
+2025-03-25 22:06:52 - INFO - Connection closed
+2025-03-25 22:06:52 - INFO - Connection established
+2025-03-25 22:06:52 - INFO - Data inserted on jobs
+2025-03-25 22:06:52 - INFO - Connection closed
+2025-03-25 22:07:30 - INFO - Connection established
+2025-03-25 22:07:30 - INFO - Connection established
+2025-03-25 22:07:30 - INFO - Data inserted on departments
+2025-03-25 22:07:30 - INFO - Connection closed
+2025-03-25 22:07:30 - INFO - Connection established
+2025-03-25 22:07:31 - INFO - Data inserted on hired_employees
+2025-03-25 22:07:31 - INFO - Connection closed
+2025-03-25 22:07:31 - INFO - Connection established
+2025-03-25 22:07:31 - INFO - Data inserted on jobs
+2025-03-25 22:07:31 - INFO - Connection closed
+2025-03-25 22:07:52 - INFO - Connection established
+2025-03-25 22:07:52 - INFO - Connection established
+2025-03-25 22:07:52 - INFO - Data inserted on departments
+2025-03-25 22:07:52 - INFO - Connection closed
+2025-03-25 22:07:52 - INFO - Connection established
+2025-03-25 22:07:53 - INFO - Data inserted on hired_employees
+2025-03-25 22:07:53 - INFO - Connection closed
+2025-03-25 22:07:53 - INFO - Connection established
+2025-03-25 22:07:53 - INFO - Data inserted on jobs
+2025-03-25 22:07:53 - INFO - Connection closed
+2025-03-25 22:07:59 - INFO - Connection established
+2025-03-25 22:07:59 - INFO - Connection established
+2025-03-25 22:07:59 - INFO - Data inserted on departments
+2025-03-25 22:07:59 - INFO - Connection closed
+2025-03-25 22:07:59 - INFO - Connection established
+2025-03-25 22:08:00 - INFO - Data inserted on hired_employees
+2025-03-25 22:08:00 - INFO - Connection closed
+2025-03-25 22:08:00 - INFO - Connection established
+2025-03-25 22:08:00 - INFO - Data inserted on jobs
+2025-03-25 22:08:00 - INFO - Connection closed
+2025-03-25 22:11:03 - INFO - Connection established
+2025-03-25 22:11:03 - INFO - Connection established
+2025-03-25 22:11:03 - INFO - Data inserted on departments
+2025-03-25 22:11:03 - INFO - Connection closed
+2025-03-25 22:11:03 - INFO - Connection established
+2025-03-25 22:11:04 - INFO - Data inserted on hired_employees
+2025-03-25 22:11:04 - INFO - Connection closed
+2025-03-25 22:11:04 - INFO - Connection established
+2025-03-25 22:11:04 - INFO - Data inserted on jobs
+2025-03-25 22:11:04 - INFO - Connection closed
+2025-03-25 22:12:35 - INFO - Connection established
+2025-03-25 22:12:35 - INFO - Connection established
+2025-03-25 22:12:35 - INFO - Data inserted on departments
+2025-03-25 22:12:35 - INFO - Connection closed
+2025-03-25 22:12:35 - INFO - Connection established
+2025-03-25 22:12:35 - INFO - Data inserted on hired_employees
+2025-03-25 22:12:35 - INFO - Connection closed
+2025-03-25 22:12:35 - INFO - Connection established
+2025-03-25 22:12:35 - INFO - Data inserted on jobs
+2025-03-25 22:12:35 - INFO - Connection closed
+2025-03-25 22:15:18 - INFO - Connection established
+2025-03-25 22:15:18 - INFO - Connection established
+2025-03-25 22:15:18 - INFO - Data inserted on departments
+2025-03-25 22:15:18 - INFO - Connection closed
+2025-03-25 22:15:18 - INFO - Connection established
+2025-03-25 22:15:19 - INFO - Data inserted on hired_employees
+2025-03-25 22:15:19 - INFO - Connection closed
+2025-03-25 22:15:19 - INFO - Connection established
+2025-03-25 22:15:19 - INFO - Data inserted on jobs
+2025-03-25 22:15:19 - INFO - Connection closed
+2025-03-25 22:16:13 - INFO - Connection established
+2025-03-25 22:16:13 - INFO - Connection established
+2025-03-25 22:16:13 - INFO - Data inserted on departments
+2025-03-25 22:16:13 - INFO - Connection closed
+2025-03-25 22:16:13 - INFO - Connection established
+2025-03-25 22:16:14 - INFO - Data inserted on hired_employees
+2025-03-25 22:16:14 - INFO - Connection closed
+2025-03-25 22:16:14 - INFO - Connection established
+2025-03-25 22:16:14 - INFO - Data inserted on jobs
+2025-03-25 22:16:14 - INFO - Connection closed
+2025-03-25 22:17:26 - ERROR - Each batch must contain between 1 and 1000 records.
+2025-03-25 22:17:26 - ERROR - Each batch must contain between 1 and 1000 records.
+2025-03-25 22:17:26 - ERROR - Each batch must contain between 1 and 1000 records.
+2025-03-25 22:18:06 - INFO - Connection established
+2025-03-25 22:18:06 - ERROR - Status code 500. Detail = Dstrno hay restricción única o de exclusión que coincida con la especificación ON CONFLICT
+
+2025-03-25 22:19:08 - INFO - Connection established
+2025-03-25 22:19:08 - INFO - Connection established
+2025-03-25 22:19:08 - INFO - Data inserted on departments
+2025-03-25 22:19:08 - INFO - Connection closed
+2025-03-25 22:19:08 - INFO - Connection established
+2025-03-25 22:19:09 - INFO - Data inserted on hired_employees
+2025-03-25 22:19:09 - INFO - Connection closed
+2025-03-25 22:19:09 - INFO - Connection established
+2025-03-25 22:19:09 - INFO - Data inserted on jobs
+2025-03-25 22:19:09 - INFO - Connection closed
+2025-03-25 22:19:16 - INFO - Connection established
+2025-03-25 22:19:16 - ERROR - Status code 500. Detail = Dstrno hay restricción única o de exclusión que coincida con la especificación ON CONFLICT
+
+2025-03-25 22:24:42 - INFO - Connection established
+2025-03-25 22:24:42 - INFO - Connection established
+2025-03-25 22:24:42 - INFO - Data inserted on departments
+2025-03-25 22:24:42 - INFO - Connection closed
+2025-03-25 22:24:42 - INFO - Connection established
+2025-03-25 22:24:43 - INFO - Data inserted on hired_employees
+2025-03-25 22:24:43 - INFO - Connection closed
+2025-03-25 22:24:43 - INFO - Connection established
+2025-03-25 22:24:43 - INFO - Data inserted on jobs
+2025-03-25 22:24:43 - INFO - Connection closed
+2025-03-25 22:24:57 - INFO - Processing insert_data request
+2025-03-25 22:24:57 - INFO - Connection established
+2025-03-25 22:24:57 - ERROR - Database error: no hay restricción única o de exclusión que coincida con la especificación ON CONFLICT
+
+2025-03-25 22:24:57 - INFO - Database connection closed
+2025-03-25 22:26:55 - INFO - Processing insert_data request
+2025-03-25 22:26:55 - INFO - Connection established
+2025-03-25 22:26:55 - ERROR - Database error: no hay restricción única o de exclusión que coincida con la especificación ON CONFLICT
+
+2025-03-25 22:26:55 - INFO - Database connection closed
+2025-03-25 22:28:57 - INFO - Processing insert_data request
+2025-03-25 22:28:57 - INFO - Connection established
+2025-03-25 22:28:57 - INFO - Inserted 1 departments
+2025-03-25 22:28:57 - ERROR - Database error: no existe la columna «job» en la relación «jobs»
+LINE 1: INSERT INTO challenge.jobs (id, job) VALUES (10000, 'CEO') O...
+                                        ^
+
+2025-03-25 22:28:57 - INFO - Database connection closed
+2025-03-25 22:30:20 - INFO - Processing insert_data request
+2025-03-25 22:30:20 - INFO - Connection established
+2025-03-25 22:30:20 - INFO - Inserted 1 departments
+2025-03-25 22:30:20 - ERROR - Database error: no existe la columna «job» en la relación «jobs»
+LINE 1: INSERT INTO challenge.jobs (id, job) VALUES (1, 'CEO') ON CO...
+                                        ^
+
+2025-03-25 22:30:20 - INFO - Database connection closed
+2025-03-25 22:32:28 - INFO - Processing insert_data request
+2025-03-25 22:32:28 - INFO - Connection established
+2025-03-25 22:32:28 - INFO - Inserted 1 departments
+2025-03-25 22:32:28 - ERROR - Database error: no existe la columna «job» en la relación «jobs»
+LINE 1: INSERT INTO challenge.jobs (id, job) VALUES (1, 'CEO') ON CO...
+                                        ^
+
+2025-03-25 22:32:28 - INFO - Database connection closed
+2025-03-25 22:33:19 - INFO - Connection established
+2025-03-25 22:33:20 - INFO - Connection established
+2025-03-25 22:33:20 - INFO - Data inserted on departments
+2025-03-25 22:33:20 - INFO - Connection closed
+2025-03-25 22:33:31 - INFO - Connection established
+2025-03-25 22:33:31 - INFO - Connection established
+2025-03-25 22:33:31 - INFO - Data inserted on jobs
+2025-03-25 22:33:31 - INFO - Connection closed
+2025-03-25 22:35:49 - INFO - Connection established
+2025-03-25 22:35:49 - INFO - Connection established
+2025-03-25 22:35:49 - ERROR - Error loading CSV to jobs: llave duplicada viola restricción de unicidad «jobs_pkey»
+DETAIL:  Ya existe la llave (id)=(2).
+.
+2025-03-25 22:35:49 - INFO - Connection closed
+2025-03-25 22:42:32 - INFO - Connection established
+2025-03-25 22:42:32 - INFO - Connection established
+2025-03-25 22:42:32 - ERROR - Error loading CSV to jobs: llave duplicada viola restricción de unicidad «jobs_pkey»
+DETAIL:  Ya existe la llave (id)=(2).
+.
+2025-03-25 22:42:32 - INFO - Connection closed
+2025-03-25 22:44:43 - INFO - Processing insert_data request
+2025-03-25 22:44:43 - INFO - Connection established
+2025-03-25 22:44:43 - INFO - Inserted 0 departments
+2025-03-25 22:44:43 - INFO - Inserted 0 jobs
+2025-03-25 22:44:43 - INFO - Inserted 1 employees
+2025-03-25 22:44:43 - INFO - Database connection closed
+2025-03-25 22:49:40 - INFO - Processing insert_data request
+2025-03-25 22:49:40 - INFO - Connection established
+2025-03-25 22:49:40 - INFO - Inserted 0 departments
+2025-03-25 22:49:40 - INFO - Inserted 0 jobs
+2025-03-25 22:49:40 - ERROR - Database error: el valor null para la columna «id» viola la restricción not null
+DETAIL:  La fila que falla contiene (null, Camilo Corredor, 2023-05-10 09:30:00-05, 2, 2).
+
+2025-03-25 22:49:40 - INFO - Database connection closed
+2025-03-25 22:51:51 - INFO - Processing insert_data request
+2025-03-25 22:51:51 - INFO - Connection established
+2025-03-25 22:51:51 - INFO - Inserted 0 departments
+2025-03-25 22:51:51 - INFO - Inserted 0 jobs
+2025-03-25 22:51:51 - INFO - Inserted 1 employees
+2025-03-25 22:51:51 - INFO - Database connection closed
+2025-03-25 22:52:24 - INFO - Processing insert_data request
+2025-03-25 22:52:24 - INFO - Connection established
+2025-03-25 22:52:24 - INFO - Inserted 0 departments
+2025-03-25 22:52:24 - INFO - Inserted 0 jobs
+2025-03-25 22:52:24 - INFO - Inserted 1 employees
+2025-03-25 22:52:24 - INFO - Database connection closed
+2025-03-25 22:53:43 - INFO - Processing insert_data request
+2025-03-25 22:53:43 - INFO - Connection established
+2025-03-25 22:53:43 - INFO - Inserted 0 departments
+2025-03-25 22:53:43 - INFO - Inserted 0 jobs
+2025-03-25 22:53:43 - INFO - Inserted 1 employees
+2025-03-25 22:53:43 - INFO - Database connection closed
+2025-03-25 22:55:26 - INFO - Processing insert_data request
+2025-03-25 22:55:26 - INFO - Connection established
+2025-03-25 22:55:26 - INFO - Inserted 0 departments
+2025-03-25 22:55:26 - INFO - Inserted 0 jobs
+2025-03-25 22:55:26 - ERROR - Database error: llave duplicada viola restricción de unicidad «hired_employees_pkey»
+DETAIL:  Ya existe la llave (id)=(2).
+
+2025-03-25 22:55:26 - INFO - Database connection closed
+2025-03-25 22:58:17 - INFO - Processing insert_data request
+2025-03-25 22:58:17 - INFO - Connection established
+2025-03-25 22:58:17 - INFO - Inserted 0 departments
+2025-03-25 22:58:17 - INFO - Inserted 0 jobs
+2025-03-25 22:58:17 - ERROR - Database error: no existe la relación «challenge.hired_employees_id_seq»
+LINE 1: SELECT nextval('challenge.hired_employees_id_seq');
+                       ^
+
+2025-03-25 22:58:17 - INFO - Database connection closed
+2025-03-25 22:59:51 - INFO - Processing insert_data request
+2025-03-25 22:59:51 - INFO - Connection established
+2025-03-25 22:59:51 - INFO - Inserted 0 departments
+2025-03-25 22:59:51 - INFO - Inserted 0 jobs
+2025-03-25 22:59:51 - INFO - Inserted 1 employees
+2025-03-25 22:59:51 - INFO - Database connection closed

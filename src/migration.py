@@ -71,7 +71,7 @@ class SQL:
             # print(df)
             # cursor.execute(f"SELECT to_regclass('challenge.{table_name}')")
             # table_exists = cursor.fetchone()[0]
-            print(df.isnull().sum()) 
+            # print(df.isnull().sum()) 
             df = df.applymap(lambda x: None if pd.isna(x) else x)
             if table_name == 'department' or table_name == 'jobs': 
                 df.iloc[:, 0] = df.iloc[:, 0].fillna(0).astype(int)
@@ -106,10 +106,10 @@ connector = SQL(parameters['host'],
                          parameters['psw'],
                          parameters['schema'])
 
-
-connector.connect()
-connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/departments.csv', 'departments')
-connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/hired_employees.csv', 'hired_employees')
-connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/jobs.csv', 'jobs')
+if __name__ == "__main__": #Bug fixed 
+    connector.connect()
+    connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/departments.csv', 'departments')
+    connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/hired_employees.csv', 'hired_employees')
+    connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/jobs.csv', 'jobs')
             
             
