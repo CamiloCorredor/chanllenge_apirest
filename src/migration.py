@@ -118,7 +118,7 @@ class SQL:
         try:
             df = pd.read_sql(query, conn)
             Hermes.log_file(f"Query ejecutada", 'INFO')
-            return df  # ✅ Ahora la conexión se cerrará antes de salir
+            return df  
         except Exception as e:
             Hermes.log_file(f"Se ha encontrado un error al ejecutar Query: {e}.", 'ERROR')
             conn.rollback()
@@ -129,10 +129,6 @@ class SQL:
             Hermes.log_file(f"Connection closed", 'INFO')
         
 
-            
-            
-
-
 if __name__ == "__main__": #Bug fixed 
     Hermes = security(f'{path_security}/configfile.txt', f'{path_security}/logfile.log')
     parameters = Hermes.config_file_read()
@@ -142,13 +138,11 @@ if __name__ == "__main__": #Bug fixed
                          parameters['psw'],
                          parameters['schema'])
     connector.connect()
-    # connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/departments.csv', 'departments')
-    # connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/jobs.csv', 'jobs')
-    # connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/hired_employees.csv', 'hired_employees')
+    connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/departments.csv', 'departments')
+    connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/jobs.csv', 'jobs')
+    connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/hired_employees.csv', 'hired_employees')
     
     
-    df = connector.queries(query)
-    print(df)
 
             
             

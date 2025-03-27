@@ -18,19 +18,20 @@ class Backup:
         cursor = conn.cursor()
         
         try:
-            # Obtener datos de la tabla
+            
             cursor.execute(f"SELECT * FROM challenge.{table_name}")
             rows = cursor.fetchall()
-            columns = [desc[0] for desc in cursor.description]
-
-            # Convertir a DataFrame
+            columns = [desc[0] for desc in cursor.description]           
             df = pd.DataFrame(rows, columns=columns)
+            if table_name == 'hired_employees':
+                df['datetime'] = df['datetime'].astype(str)  ###Bug fixed
+                
 
             if df.empty:
                 Hermes.log_file(f"No hay registros en la tabla {table_name}.", 'INFO')
                 return
 
-            # Crear esquema AVRO dinámico
+            
             schema = {
                 "type": "record",
                 "name": f"{table_name}_record",
@@ -106,5 +107,5 @@ if __name__ == "__main__":
     tables = ["departments", "jobs", "hired_employees"]
     for table in tables:
         path_avro = f"{path_backup}/{table}.avro"
-        backup_manager.backup_2_DB(path_avro, table)
-        # backup_manager.backup_table_2_avro(table)
+        # backup_manager.backup_2_DB(path_avro, table)
+        backup_manager.backup_table_2_avro(table)

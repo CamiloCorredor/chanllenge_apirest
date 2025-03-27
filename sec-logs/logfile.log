@@ -752,3 +752,26 @@ DETAIL:  Ya existe la llave (id)=(2).
 2025-03-26 19:32:30 - INFO - Connection established
 2025-03-26 19:32:30 - INFO - Query ejecutada
 2025-03-26 19:32:30 - INFO - Connection closed
+2025-03-26 19:46:37 - INFO - Connection established
+2025-03-26 19:46:37 - INFO - Connection established
+2025-03-26 19:46:37 - INFO - Query ejecutada
+2025-03-26 19:46:37 - INFO - Connection closed
+2025-03-26 19:51:39 - INFO - Connection established
+2025-03-26 19:51:39 - INFO - La tabla 'departments' ha sido restaurada exitosamente desde /home/camilo/Documentos/Globant_Challenge/backups/departments.avro.
+2025-03-26 19:51:46 - INFO - Connection established
+2025-03-26 19:51:46 - INFO - La tabla 'jobs' ha sido restaurada exitosamente desde /home/camilo/Documentos/Globant_Challenge/backups/jobs.avro.
+2025-03-26 19:51:49 - INFO - Connection established
+2025-03-26 19:51:49 - INFO - El archivo /home/camilo/Documentos/Globant_Challenge/backups/hired_employees.avro está vacío. No hay datos para restaurar.
+2025-03-26 19:51:49 - INFO - Error al restaurar la tabla 'hired_employees': list index out of range
+2025-03-26 19:52:23 - INFO - Connection established
+2025-03-26 19:52:23 - INFO - Backup de latabla departments guardado en /home/camilo/Documentos/Globant_Challenge/backups/departments.avro
+2025-03-26 19:52:26 - INFO - Connection established
+2025-03-26 19:52:26 - INFO - Backup de latabla jobs guardado en /home/camilo/Documentos/Globant_Challenge/backups/jobs.avro
+2025-03-26 19:52:28 - INFO - Connection established
+2025-03-26 19:52:28 - ERROR - Error durante backup de la tabla hired_employees: Timestamp('2021-05-30 00:43:46-0500', tz='UTC-05:00') (type <class 'pandas._libs.tslibs.timestamps.Timestamp'>) do not match ['null', 'string', 'int', 'float', 'double'] on field datetime
+2025-03-26 19:54:16 - INFO - Connection established
+2025-03-26 19:54:16 - INFO - Backup de latabla departments guardado en /home/camilo/Documentos/Globant_Challenge/backups/departments.avro
+2025-03-26 19:54:19 - INFO - Connection established
+2025-03-26 19:54:19 - INFO - Backup de latabla jobs guardado en /home/camilo/Documentos/Globant_Challenge/backups/jobs.avro
+2025-03-26 19:54:21 - INFO - Connection established
+2025-03-26 19:54:21 - INFO - Backup de latabla hired_employees guardado en /home/camilo/Documentos/Globant_Challenge/backups/hired_employees.avro
