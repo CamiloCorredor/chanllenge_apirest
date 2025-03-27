@@ -7,7 +7,7 @@ from typing import List
 from datetime import datetime
 from migration import SQL, security
 import traceback
-
+path_security = os.path.join(os.getcwd(), "sec-logs")
 path_security = '/home/camilo/Documentos/Globant_Challenge/sec-logs'  # Mejorar con secret manager
 Hermes = security(f'{path_security}/configfile.txt', f'{path_security}/logfile.log')
 
