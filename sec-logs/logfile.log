@@ -675,3 +675,80 @@ DETAIL:  Ya existe la llave (id)=(2).
 2025-03-26 16:36:16 - INFO - Connection established
 2025-03-26 16:36:16 - INFO - El archivo /home/camilo/Documentos/Globant_Challenge/backups/hired_employees.avro está vacío. No hay datos para restaurar.
 2025-03-26 16:36:16 - INFO - Error al restaurar la tabla 'hired_employees': list index out of range
+2025-03-26 18:54:17 - INFO - Connection established
+2025-03-26 18:54:17 - INFO - Connection established
+2025-03-26 18:54:17 - INFO - Data inserted on departments
+2025-03-26 18:54:17 - INFO - Connection closed
+2025-03-26 18:54:17 - INFO - Connection established
+2025-03-26 18:54:18 - INFO - Data inserted on hired_employees
+2025-03-26 18:54:18 - INFO - Connection closed
+2025-03-26 18:54:18 - INFO - Connection established
+2025-03-26 18:54:18 - INFO - Data inserted on jobs
+2025-03-26 18:54:18 - INFO - Connection closed
+2025-03-26 19:06:10 - INFO - Connection established
+2025-03-26 19:06:56 - INFO - Connection established
+2025-03-26 19:08:03 - INFO - Connection established
+2025-03-26 19:08:56 - INFO - Connection established
+2025-03-26 19:08:58 - INFO - Connection established
+2025-03-26 19:09:02 - INFO - Query ejecutada
+2025-03-26 19:09:07 - INFO - Connection closed
+2025-03-26 19:09:25 - INFO - Connection established
+2025-03-26 19:09:25 - INFO - Connection established
+2025-03-26 19:09:25 - INFO - Query ejecutada
+2025-03-26 19:09:25 - INFO - Connection closed
+2025-03-26 19:12:05 - INFO - Connection established
+2025-03-26 19:12:05 - INFO - Connection established
+2025-03-26 19:12:05 - INFO - Connection closed
+2025-03-26 19:15:23 - INFO - Connection established
+2025-03-26 19:15:27 - INFO - Connection established
+2025-03-26 19:15:27 - ERROR - Error loading CSV to hired_employees: llave duplicada viola restricción de unicidad «hired_employees_pkey»
+DETAIL:  Ya existe la llave (id)=(2).
+.
+2025-03-26 19:15:27 - INFO - Connection closed
+2025-03-26 19:17:26 - INFO - Connection established
+2025-03-26 19:17:26 - INFO - Connection established
+2025-03-26 19:17:26 - INFO - Data inserted on departments
+2025-03-26 19:17:26 - INFO - Connection closed
+2025-03-26 19:17:26 - INFO - Connection established
+2025-03-26 19:17:26 - INFO - Data inserted on jobs
+2025-03-26 19:17:26 - INFO - Connection closed
+2025-03-26 19:17:26 - INFO - Connection established
+2025-03-26 19:17:27 - INFO - Data inserted on hired_employees
+2025-03-26 19:17:27 - INFO - Connection closed
+2025-03-26 19:17:41 - INFO - Connection established
+2025-03-26 19:18:07 - INFO - Connection established
+2025-03-26 19:19:05 - INFO - Connection established
+2025-03-26 19:19:05 - INFO - Connection established
+2025-03-26 19:19:05 - ERROR - Error loading CSV to departments: llave duplicada viola restricción de unicidad «departments_pkey»
+DETAIL:  Ya existe la llave (id)=(2).
+.
+2025-03-26 19:19:05 - INFO - Connection closed
+2025-03-26 19:19:15 - INFO - Connection established
+2025-03-26 19:19:16 - INFO - Connection established
+2025-03-26 19:19:16 - INFO - Data inserted on departments
+2025-03-26 19:19:16 - INFO - Connection closed
+2025-03-26 19:19:16 - INFO - Connection established
+2025-03-26 19:19:16 - INFO - Data inserted on jobs
+2025-03-26 19:19:16 - INFO - Connection closed
+2025-03-26 19:19:16 - INFO - Connection established
+2025-03-26 19:19:16 - INFO - Data inserted on hired_employees
+2025-03-26 19:19:16 - INFO - Connection closed
+2025-03-26 19:21:42 - INFO - Connection established
+2025-03-26 19:21:44 - INFO - Connection established
+2025-03-26 19:22:23 - INFO - Connection established
+2025-03-26 19:24:21 - INFO - Connection established
+2025-03-26 19:24:21 - INFO - Connection established
+2025-03-26 19:24:21 - INFO - Query ejecutada
+2025-03-26 19:24:21 - INFO - Connection closed
+2025-03-26 19:24:31 - INFO - Connection established
+2025-03-26 19:24:31 - INFO - Connection established
+2025-03-26 19:24:31 - INFO - Query ejecutada
+2025-03-26 19:24:31 - INFO - Connection closed
+2025-03-26 19:32:27 - INFO - Connection established
+2025-03-26 19:32:27 - INFO - Connection established
+2025-03-26 19:32:27 - INFO - Query ejecutada
+2025-03-26 19:32:27 - INFO - Connection closed
+2025-03-26 19:32:30 - INFO - Connection established
+2025-03-26 19:32:30 - INFO - Connection established
+2025-03-26 19:32:30 - INFO - Query ejecutada
+2025-03-26 19:32:30 - INFO - Connection closed

@@ -7,6 +7,21 @@ from datetime import datetime
 from fastapi import FastAPI, HTTPException
 
 path_security = '/home/camilo/Documentos/Globant_Challenge/sec-logs'
+query = """
+    SELECT 
+    d.department AS department,
+    j.jobs AS job,
+    COUNT(CASE WHEN EXTRACT(QUARTER FROM he.datetime) = 1 THEN 1 END) AS Q1,
+    COUNT(CASE WHEN EXTRACT(QUARTER FROM he.datetime) = 2 THEN 1 END) AS Q2,
+    COUNT(CASE WHEN EXTRACT(QUARTER FROM he.datetime) = 3 THEN 1 END) AS Q3,
+    COUNT(CASE WHEN EXTRACT(QUARTER FROM he.datetime) = 4 THEN 1 END) AS Q4
+FROM challenge.hired_employees he
+JOIN challenge.departments d ON he.department_id = d.id
+JOIN challenge.jobs j ON he.job_id = j.id
+WHERE EXTRACT(YEAR FROM he.datetime) = 2021
+GROUP BY d.department, j.jobs
+ORDER BY d.department ASC, j.jobs ASC;
+"""
 
 class security:
        
@@ -95,21 +110,45 @@ class SQL:
             cursor.close()            
             Hermes.log_file(f"Connection closed", 'INFO')
             
+            
+    def queries(self, query):
+        Hermes = security(f'{path_security}/configfile.txt', f'{path_security}/logfile.log')
+        conn = self.connect()
+        cursor = conn.cursor()
+        try:
+            df = pd.read_sql(query, conn)
+            Hermes.log_file(f"Query ejecutada", 'INFO')
+            return df  # ✅ Ahora la conexión se cerrará antes de salir
+        except Exception as e:
+            Hermes.log_file(f"Se ha encontrado un error al ejecutar Query: {e}.", 'ERROR')
+            conn.rollback()
+            return None
+        finally:
+            cursor.close()
+            conn.close()
+            Hermes.log_file(f"Connection closed", 'INFO')
+        
 
             
             
-Hermes = security(f'{path_security}/configfile.txt', f'{path_security}/logfile.log')
-parameters = Hermes.config_file_read()
-connector = SQL(parameters['host'],
+
+
+if __name__ == "__main__": #Bug fixed 
+    Hermes = security(f'{path_security}/configfile.txt', f'{path_security}/logfile.log')
+    parameters = Hermes.config_file_read()
+    connector = SQL(parameters['host'],
                          parameters['DB_name'],
                          parameters['usr'],
                          parameters['psw'],
                          parameters['schema'])
-
-if __name__ == "__main__": #Bug fixed 
     connector.connect()
-    connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/departments.csv', 'departments')
-    connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/hired_employees.csv', 'hired_employees')
-    connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/jobs.csv', 'jobs')
+    # connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/departments.csv', 'departments')
+    # connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/jobs.csv', 'jobs')
+    # connector.load_csv_to_db('/home/camilo/Documentos/Globant_Challenge/data/hired_employees.csv', 'hired_employees')
+    
+    
+    df = connector.queries(query)
+    print(df)
+
             
             
