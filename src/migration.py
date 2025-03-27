@@ -5,7 +5,7 @@ import os
 from openpyxl import load_workbook
 from datetime import datetime
 from fastapi import FastAPI, HTTPException
-path_security = os.path.join(os.getcwd(), "sec-logs")
+path_security = os.path.join(os.getcwd(), "sec-logs") ##Linea para ejecutar con Docker
 path_security = '/home/camilo/Documentos/Globant_Challenge/sec-logs'
 query = """
     SELECT 

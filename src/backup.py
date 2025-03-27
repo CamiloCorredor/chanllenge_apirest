@@ -3,7 +3,7 @@ import pandas as pd
 import fastavro
 import os
 from migration import security, SQL
-path_security = os.path.join(os.getcwd(), "sec-logs")
+path_security = os.path.join(os.getcwd(), "sec-logs") ##Linea para ejecutar con Docker
 path_security = '/home/camilo/Documentos/Globant_Challenge/sec-logs'
 
 class Backup:
